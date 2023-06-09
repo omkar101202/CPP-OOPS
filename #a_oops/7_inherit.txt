@@ -1,0 +1,68 @@
+deriving a new class by inheriting properties and methods of an old class ia known as "inheritance".
+
+->>
+class base_class
+{
+
+};
+
+class derived_class:visibility_mode base_class
+{
+
+};
+
+->>
+
+1.single I.
+2.multilevel I.
+3.multiple I.  (*not in java)[#ambigutigue]()
+4.hierarchical I.(#)
+5.hybrid I.
+
+##-> constructor in inheritance-{#######top to bottom-->parent to child#########}
+##constructor is never inherited.
+
+->>when child class obj is created then control goes to constructor of child class
+but there is constructor of parent class in 'initializer list'so it is execuated first therefore it goes to constructor of parent class execuated then child class constructor is runned.
+
+initializer list-->> Av2():A()
+what we write after that colen(:) is said to in initializer list
+[code in A()- is runned first then it comes to Av2().]
+
+
+##-> destructor in inheritance-(#########bottom to top######)
+
+-->>it is reverse of constructor first destructor of derived_class is runned and then of parent class is runned.
+
+
+## in normal function which one will be called depends on the pointer type.
+this is decided at compile time so it is early binding(compile time binding.)
+
+## in virtual function which function will be called depends on object type.
+this is decided at runtime [the type of object we assign to the pointer] so it is late binding(runtime time binding)
+
+
+##=>how compiler use runtime binding for virtual function-
+->#refer class notes.[*vptr][virtual function table ][pointer array]  
+
+
+##pure virtual function-
+1)->## "virtual function" and "pure virtual function" are two different things.they are not same.
+=>it is used to create a 'Abstract class'.
+Abstract class->classes whose coding is not complete(or the class which contain pure virtual function so it is incomplete)
+[we cannot create an object of Abstract class,
+because the class contain pure virtual function so it is not complete.]
+
+syntax-(pure virtual function)
+virtual return_type function_name()=0;
+e.g.- virtual void search()=0;
+      virtual void book()=0;
+
+
+-->>diamond problem-
+adding virtual keyword while inheriting the virtual class .(refer 7_diamond_prob.cpp)
+
+use of virtual keyword-
+1)in virtual function (function)
+2)in pure virtual function (abstract class)
+3)in problem situation like diamond problem (inheritance)

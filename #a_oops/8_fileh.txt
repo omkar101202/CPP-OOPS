@@ -1,0 +1,10 @@
+in cpp file is deled by using certain classes-
+like, ofstream->stream class to write on file
+      ifstream->stream class to read file
+      #fstream->streamclass to both write and read from files
+
+##cin and cout are the obj of iostream class whick are already made to take input from our keyboard and display on our moniter.
+but for reading and writing we have to make different(new) objects of ifstream/ofstream class to read/write in/on different files.(thats why we are given authority to create the object of these classes that we may need to deal with many files at a time so for that we need different objects of these classes).
+
+-->>at the end we must close the files / ................
+

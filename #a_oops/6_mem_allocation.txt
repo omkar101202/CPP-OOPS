@@ -1,0 +1,29 @@
+cpp/c contain both sma and dma
+
+
+memory allocation
+1)sma
+static memory allocation (here 'static' is not related with the static keyword in cpp )
+here memory is allocated is to variables by deleclation statements (in compile time its scope and life time is decided)
+e.g. int x;
+     float y;  etc.
+
+2)dma
+dynamic memory allocation
+these are formed by calling function not by decleration (calling func is a action not decleration).
+there is no name of these variables ,they are accessed by using pointers.
+e.g. malloc()
+     free()
+
+in cpp we use-->
+instead of malloc or calloc->>>____use "new"
+and ues "delete"
+
+new is a operator.it denotes a request of memory allocation from heap.
+==> int *p=new int;
+    float *ptr=new float[size]
+
+==> delete p;
+    delete []ptr;
+
+**>at runtime memory allocation is non contigous.
