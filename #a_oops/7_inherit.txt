@@ -53,17 +53,12 @@ Abstract class->classes whose coding is not complete(or the class which contain 
 [we cannot create an object of Abstract class,
 because the class contain pure virtual function so it is not complete.]
 
-#writting '=0' at the end is a way to show that a function is pure virtual function. it is just a syntax even we can do it without using '=0' at the end.
+#writting '=0' at the end is a way to show that a function is pure virtual function. and it is compulsory to make a function '=0' to be a pure virtual function.
 
 syntax-(pure virtual function)
 virtual return_type function_name()=0;
 e.g.- virtual void search()=0;
       virtual void book()=0;
-
-->without '=0'
-e.g. virtual return_type function_name() {}
-	virtual void search() {}
-	virtual void book() {}
 
 
 -->>diamond problem-
