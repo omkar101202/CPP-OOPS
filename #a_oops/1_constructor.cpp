@@ -81,3 +81,9 @@ int main()
 
     return 0;
 }
+
+/*
+constructor can be overlosded similar to function overloading.
+but
+destructor cannot be overloaded.
+*/
